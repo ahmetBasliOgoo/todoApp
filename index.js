@@ -1,7 +1,7 @@
 $('.container__input').on('keyup', function(e){
     
-    if(e.keyCode==13){
-            
+    if(e.keyCode==13 && $('.container__input').val()!==''){
+            console.log($('.container__input').val());
         const task = $("<div class='container__task container__task--not-completed'></div>")
         .text($('.container__input').val())
         
