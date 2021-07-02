@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-color: gray;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  /* 
+    &__input-password{
+        background-color: whitesmoke;
+        height: 30px;
+        width: 400px;
+        display: flex;
+        align-items: center;
+        input{
+            background: none;
+            border:none;
+            width: 100%;
+        }
+        
+    } */
+}
+
+.container__input {
+  background-color: whitesmoke;
+  height: 30px;
+  width: 400px;
+  margin-bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 3px;
+  padding: 0px 10px;
+}
+
+.container__input input {
+  background: none;
+  border: none;
+  width: 100%;
+  outline: none;
+}
+
+.container__input--eror i {
+  color: red;
+}
+
+.container__button {
+  height: 30px;
+  border-radius: 3px;
+  border: none;
+  background: #4e4eeb;
+  margin-bottom: 10px;
+}
+/*# sourceMappingURL=login-styles.css.map */

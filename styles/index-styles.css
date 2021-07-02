@@ -22,6 +22,7 @@ body {
   border-bottom: 2px solid #000;
   padding: 10px;
   font-size: 18;
+  outline: none;
 }
 
 .container__task {
@@ -50,4 +51,4 @@ body {
 h3 {
   margin: 10px 0;
 }
-/*# sourceMappingURL=styles.css.map */
+/*# sourceMappingURL=index-styles.css.map */
