@@ -27,27 +27,13 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  /* 
-    &__input-password{
-        background-color: whitesmoke;
-        height: 30px;
-        width: 400px;
-        display: flex;
-        align-items: center;
-        input{
-            background: none;
-            border:none;
-            width: 100%;
-        }
-        
-    } */
 }
 
 .container__input {
   background-color: whitesmoke;
   height: 30px;
   width: 400px;
-  margin-bottom: 10px;
+  margin-bottom: 3px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -65,8 +51,15 @@ body {
   outline: none;
 }
 
-.container__input--eror i {
+.container__input--email i {
   color: red;
+  visibility: hidden;
+}
+
+.container__warning {
+  margin: 2px;
+  font-size: 10px;
+  display: none;
 }
 
 .container__button {
@@ -75,5 +68,11 @@ body {
   border: none;
   background: #4e4eeb;
   margin-bottom: 10px;
+  cursor: pointer;
 }
-/*# sourceMappingURL=login-styles.css.map */
+
+.container__button:active {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+}
+/*# sourceMappingURL=login.css.map */

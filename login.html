@@ -2,25 +2,29 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="./styles/login-styles.css">
+    <link rel="stylesheet" href="./styles/login.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script></head>
 
     <title>Login</title>
 </head>
 
 <body>
     <div class="container">
-        <div class="container__input container__input--error">
-            <input type="email"  placeholder="type your email">
+        <div class="container__input container__input--email">
+            <input type="email"  placeholder="Email is in the Github repo read.me">
             <i class="fas fa-exclamation-circle"></i>
         </div>
-        <div class="container__input container__input--error">
-            <input type="password" placeholder="password">
-            <i class="fas fa-exclamation-circle"></i>
+        <p class="container__warning">Email format is not valid </p>
+        <div class="container__input container__input--password">
+            <input type="password" placeholder="Password is in the Github repo read.me">
+            <i class="container__input__eye-icon far fa-eye-slash"></i>
+            
         </div>
 
         <button class="container__button">Login</button>
         <p>Didn't sign in yet ? <a href="">Sign in</a> </p>
     </div>
+    <script src="./js/login.js"></script>
 </body>
 </html>
